@@ -1,0 +1,7 @@
+UserKnownHostsFile _known_hosts
+PasswordAuthentication no
+IdentitiesOnly yes
+
+Host mlbox
+User ${ssh_user}
+HostName ${server_address}
