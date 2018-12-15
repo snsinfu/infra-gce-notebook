@@ -1,0 +1,10 @@
+[Unit]
+Description=storage bucket mounter
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gcsfuse --foreground -o nonempty "${BUCKET}" %h/storage
+Restart=always
+
+[Install]
+WantedBy=default.target

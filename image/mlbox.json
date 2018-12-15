@@ -1,0 +1,46 @@
+{
+    "builders": [
+        {
+            "type":                "googlecompute",
+            "project_id":          "{{ user `google_project` }}",
+            "zone":                "{{ user `google_zone` }}",
+            "machine_type":        "{{ user `source_type` }}",
+            "source_image_family": "{{ user `source_image` }}",
+            "disk_type":           "{{ user `disk_type` }}",
+            "disk_size":           "{{ user `disk_size` }}",
+            "image_name":          "{{ user `machine_image` }}",
+            "ssh_username":        "root",
+            "metadata": {
+                "user-data": "#cloud-config\nsystem_info: {default_user: {name: root}}\n"
+            }
+        }
+    ],
+
+    "provisioners": [
+        {
+            "type":        "file",
+            "source":      "{{ template_dir }}/assets",
+            "destination": "/tmp"
+        },
+        {
+            "type": "shell",
+            "scripts": [
+                "{{ template_dir }}/scripts/install_gcsfuse.bash",
+                "{{ template_dir }}/scripts/install_cuda.bash",
+                "{{ template_dir }}/scripts/install_miniconda.bash",
+                "{{ template_dir }}/scripts/install_mlbox_env.bash",
+                "{{ template_dir }}/scripts/install_mlbox_services.bash",
+                "{{ template_dir }}/scripts/setup_swap.bash",
+                "{{ template_dir }}/scripts/cleanup.bash"
+            ]
+        }
+    ],
+
+    "post-processors": [
+        {
+            "type":       "manifest",
+            "output":     "_manifest.json",
+            "strip_path": true
+        }
+    ]
+}

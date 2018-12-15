@@ -1,0 +1,12 @@
+[Unit]
+Description=jupyterlab server
+Requires=mlbox-storage.service
+After=mlbox-storage.service
+
+[Service]
+Type=simple
+ExecStart=%h/bin/mlbox-jupyter
+Restart=always
+
+[Install]
+WantedBy=default.target

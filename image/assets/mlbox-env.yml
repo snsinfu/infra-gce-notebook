@@ -1,0 +1,17 @@
+name: mlbox
+
+dependencies:
+  - python=3.6
+  - nodejs
+  - biopython
+  - gensim
+  - jupyterlab
+  - keras
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - tensorflow-gpu
