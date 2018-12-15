@@ -1,0 +1,11 @@
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+
+_init.ok
+_resources.ok
+_provision.ok
+_known_hosts
+_ssh_config
+_image_config.json
+_manifest.json
