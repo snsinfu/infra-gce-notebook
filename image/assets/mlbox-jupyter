@@ -2,10 +2,7 @@
 
 source /opt/miniconda3/bin/activate mlbox
 
-appdir="${HOME}/storage/jupyter"
+appdir="${HOME}/.jupyter/app"
 notedir="${HOME}/storage/notebooks"
-
-mkdir -p "${appdir}"
-mkdir -p "${notedir}"
 
 exec jupyter lab --app-dir "${appdir}" --notebook-dir "${notedir}" "$@"
