@@ -1,34 +1,34 @@
 name: mlbox
 
 dependencies:
-  - anaconda::python=3.6
-  - anaconda::biopython
-  - anaconda::bokeh
-  - anaconda::cython
-  - anaconda::dask
-  - anaconda::gensim
-  - anaconda::h5py
-  - anaconda::joblib
-  - anaconda::jupyterlab
-  - anaconda::keras
-  - anaconda::matplotlib
-  - anaconda::msgpack-python
-  - anaconda::nltk
-  - anaconda::nodejs
-  - anaconda::numba
-  - anaconda::numpy
-  - anaconda::pandas
-  - anaconda::pillow
-  - anaconda::pomegranate
-  - anaconda::pymc3
-  - anaconda::pyyaml
-  - anaconda::requests
-  - anaconda::scikit-image
-  - anaconda::scikit-learn
-  - anaconda::scipy
-  - anaconda::sqlalchemy
-  - anaconda::statsmodels
-  - anaconda::tensorflow-gpu
+  - defaults::python=3.6
+  - defaults::biopython
+  - defaults::bokeh
+  - defaults::cython
+  - defaults::dask
+  - defaults::gensim
+  - defaults::h5py
+  - defaults::joblib
+  - defaults::jupyterlab
+  - defaults::keras
+  - defaults::matplotlib
+  - defaults::msgpack-python
+  - defaults::nltk
+  - defaults::nodejs
+  - defaults::numba
+  - defaults::numpy
+  - defaults::pandas
+  - defaults::pillow
+  - defaults::pomegranate
+  - defaults::pymc3
+  - defaults::pyyaml
+  - defaults::requests
+  - defaults::scikit-image
+  - defaults::scikit-learn
+  - defaults::scipy
+  - defaults::sqlalchemy
+  - defaults::statsmodels
+  - defaults::tensorflow-gpu
   - conda-forge::imbalanced-learn
   - conda-forge::jupyter_nbextensions_configurator
   - conda-forge::mlxtend
