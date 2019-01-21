@@ -13,6 +13,9 @@ variable "machine_image" {
 variable "accelerator_type" {
 }
 
+variable "accelerator_count" {
+}
+
 variable "disk_type" {
 }
 

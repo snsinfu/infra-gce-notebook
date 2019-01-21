@@ -57,7 +57,7 @@ resource "google_compute_instance" "main" {
 
   guest_accelerator {
     type  = "${var.accelerator_type}"
-    count = 1
+    count = "${var.accelerator_count}"
   }
 
   metadata = {
