@@ -16,6 +16,8 @@ cat > /etc/skel/.config/systemd/user/mlbox-storage.service.d/override.conf << EO
 Environment="BUCKET="
 EOF
 
+loginctl enable-linger
+
 #
 # Jupyter launcher
 #
