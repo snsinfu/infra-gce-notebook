@@ -8,6 +8,7 @@ dependencies:
   - defaults::dask
   - defaults::gensim
   - defaults::h5py
+  - defaults::ipyparallel
   - defaults::joblib
   - defaults::jupyterlab
   - defaults::keras
