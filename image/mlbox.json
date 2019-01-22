@@ -30,6 +30,7 @@
                 "{{ template_dir }}/scripts/install_miniconda.bash",
                 "{{ template_dir }}/scripts/install_mlbox_env.bash",
                 "{{ template_dir }}/scripts/install_mlbox_services.bash",
+                "{{ template_dir }}/scripts/install_mlbox_appdir.bash",
                 "{{ template_dir }}/scripts/setup_swap.bash",
                 "{{ template_dir }}/scripts/cleanup.bash"
             ]
