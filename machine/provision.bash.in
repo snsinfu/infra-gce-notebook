@@ -1,0 +1,12 @@
+#!/bin/bash
+set -eux -o pipefail
+
+cat > ~/.config/systemd/user/mlbox-storage.service.d/override.conf << EOF
+[Service]
+Environment="BUCKET={{bucket}}"
+EOF
+
+loginctl enable-linger
+
+systemctl --user start mlbox-storage
+systemctl --user start mlbox-jupyter
