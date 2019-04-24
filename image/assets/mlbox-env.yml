@@ -22,18 +22,26 @@ dependencies:
   - defaults::pillow
   - defaults::pomegranate
   - defaults::pymc3
+  - defaults::pytables
   - defaults::pyyaml
   - defaults::requests
   - defaults::scikit-image
   - defaults::scikit-learn
   - defaults::scipy
+  - defaults::seaborn
   - defaults::sqlalchemy
   - defaults::statsmodels
   - defaults::tensorflow-gpu
+  - conda-forge::hyperopt
   - conda-forge::imbalanced-learn
+  - conda-forge::ipympl
   - conda-forge::jupyter_nbextensions_configurator
   - conda-forge::mlxtend
+  - conda-forge::pythreejs
   - conda-forge::scikit-optimize
   - conda-forge::umap-learn
   - intel::mkl
   - pytorch::pytorch
+  - pip
+  - pip:
+    - jupyter_tensorboard
