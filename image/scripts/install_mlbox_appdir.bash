@@ -10,3 +10,4 @@ jupyter lab build --app-dir "${app_dir}"
 # Extensions
 jupyter labextension install --app-dir "${app_dir}" jupyterlab_vim
 jupyter labextension install --app-dir "${app_dir}" @jupyterlab/toc
+jupyter labextension install --app-dir "${app_dir}" jupyterlab_tensorboard
